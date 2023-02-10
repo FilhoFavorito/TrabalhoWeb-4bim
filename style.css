@@ -1,0 +1,12 @@
+h1 {
+    background-color: blueviolet;
+}
+
+.tarefa-selecionada{
+    color: rgb(21, 255, 0);
+    font-style: italic;
+}
+
+.tarefa-normal{
+    color: rgb(255, 255, 255);
+}

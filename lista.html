@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--Definedocumento como tipo HTML -->
+<html lang="pt-br">
+<!--Define a lingua usada no site/código-->
+
+<head>
+    <!--cabeçalho do documento-->
+    <meta charset="UTF-8">
+    <!--Define o conjunto de catracteres utilizados -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Esta meta é exclusiva para Internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta para deixar o código responsivo-->
+    <link rel="stylesheet" href="style.css">
+    <!--linka o código HTML com o script de CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Tag de link utilizada para importar o framework bootstrap de forma que
+    não precise baixar arquivos locais-->
+    <title>Lista de Tarefa</title>
+    <!--Titulo da página-->
+</head>
+
+<body>
+    <!--corpo de documento-->
+    <div class="container-fluid">
+        <!--Define uma seção no documento--- A classe container - fluid fornece um contêiner de largura tota-->
+        <div class="site_inteiro">
+            <div class="text-center" id="divQuadro">
+                <!--Campo onde irão ser armazenadas as tarefas-->
+                <h1>Tarefas do Dia</h1>
+                <form>
+                    <p><label for="in Tarefa">Tarefa</label>
+                        <input type="text" class="form-control" id="inTarefa" required autofocus>
+                    </p>
+                    <p><input type="submit" class="btn btn-danger" value="Adicionar &#10003;">
+                        <!--Botão usado para adicionar tarefas novas-->
+
+                        <input type="button" class="btn btn-info" value="Selecionar &#8645;" id="btSelecionar">
+                        <!--Botão usado para selecionar uma tarefa específica-->
+
+                        <input type="button" class="btn btn-success" value="Retirar Selecionada &#10007;"
+                            id="btRetirar">
+                        <!--Botão usado para deletar uma tarefa-->
+
+                        <input type="button" class="btn btn-primary" value="Gravar &#9673;" id="btGravar">
+                        <!--Botão usado para armazenas tarefas localmente-->
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!--Tag para adicionar um script de JS externo-->
+</body>
+
+</html>
